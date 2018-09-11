@@ -3,6 +3,8 @@ var Enemy = function() {
     // Variables applied to each of our instances go here,
     // we've provided one for you to get started
 
+    //x & y position
+
     // The image/sprite for our enemies, this uses
     // a helper we've provided to easily load images
     this.sprite = 'images/enemy-bug.png';
@@ -14,6 +16,13 @@ Enemy.prototype.update = function(dt) {
     // You should multiply any movement by the dt parameter
     // which will ensure the game runs at the same speed for
     // all computers.
+
+    //If enemy is not passed boundary
+      // Move forward
+      // Increment x by speed * dt
+    //else
+      // Reset pos to start
+
 };
 
 // Draw the enemy on the screen, required method for game
@@ -24,6 +33,40 @@ Enemy.prototype.render = function() {
 // Now write your own player class
 // This class requires an update(), render() and
 // a handleInput() method.
+
+//****MY PSUEDO CODE*****
+//Hero class
+  // Constructor
+
+    //properties
+      // x position
+      // y postion
+      // sprite image
+
+    //methods
+      // Update position
+        // Check collision here
+          //Did player x and y collide with enemy?
+        // Check win here?
+          // Did player x and y reach final tile?
+      //rendor
+        //Draw player sprite on current x and y position
+     //Handle Keyboard input
+        //Update  player's x and y property according to input
+
+    //reset Hero
+      //set x and y to starting x and y
+
+
+  //New hero object
+
+  //Init allEnemies array
+  // For each enemy create and push new Enemy object into abive array
+
+
+
+
+
 
 
 // Now instantiate your objects.
