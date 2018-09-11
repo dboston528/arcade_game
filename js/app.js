@@ -36,9 +36,21 @@ Enemy.prototype.render = function() {
 
 //****MY PSUEDO CODE*****
 //Hero class
-  // Constructor
 
+class Hero  {
+  // Constructor
+  constructor (){
     //properties
+    this.x = 0;
+    this.y = 0;
+    this.sprite = 'images/char-boy.png'
+
+
+  }
+}
+
+
+
       // x position
       // y postion
       // sprite image
