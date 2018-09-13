@@ -48,10 +48,35 @@ class Hero  {
     this.sprite = 'images/char-boy.png'
   }
 
+
+
 //Draw player sprite on current x and y position
 render() {
   ctx.drawImage(Resources.get(this.sprite),this.x,this.y);
   }
+
+  /** Handle Keyboard input
+     * Update  player's x and y property according to input
+     *
+     * @param {string} input - Direction to travel
+*/
+     handleInput(input) {
+       switch(input) {
+         case 'left':
+              this.x -= 20;
+              break;
+         case 'up':
+              this.y -= 20;
+              break;
+         case 'right':
+              this.x += 20;
+              break;
+         case 'down':
+              this.y += 20;
+              break;
+       }
+
+     }
 }
 
 
@@ -68,8 +93,7 @@ render() {
           // Did player x and y reach final tile?
       //rendor
 
-     //Handle Keyboard input
-        //Update  player's x and y property according to input
+
 
     //reset Hero
       //set x and y to starting x and y
