@@ -1,3 +1,5 @@
+
+
 // Enemies our player must avoid
 var Enemy = function() {
     // Variables applied to each of our instances go here,
@@ -44,8 +46,11 @@ class Hero  {
     this.x = 0;
     this.y = 0;
     this.sprite = 'images/char-boy.png'
+  }
 
-
+//Draw player sprite on current x and y position
+render() {
+  ctx.drawImage(Resources.get(this.sprite),this.x,this.y);
   }
 }
 
@@ -62,7 +67,7 @@ class Hero  {
         // Check win here?
           // Did player x and y reach final tile?
       //rendor
-        //Draw player sprite on current x and y position
+
      //Handle Keyboard input
         //Update  player's x and y property according to input
 
@@ -71,6 +76,7 @@ class Hero  {
 
 
   //New hero object
+  const player = new Hero();
 
   //Init allEnemies array
   // For each enemy create and push new Enemy object into abive array
