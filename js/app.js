@@ -46,7 +46,7 @@ class Hero  {
     this.step = 101;
     this.jump = 83;
     this.startX = this.step * 2;
-    this.startY = this.jump * 5;
+    this.startY = (this.jump * 5) -20;
     this.x = this.startX;
     this.y = this.startY;
     this.sprite = 'images/char-boy.png';
