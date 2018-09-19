@@ -2,13 +2,8 @@
 
 // Enemies our player must avoid
 var Enemy = function() {
-    // Variables applied to each of our instances go here,
-    // we've provided one for you to get started
-
-    //x & y position
-
-    // The image/sprite for our enemies, this uses
-    // a helper we've provided to easily load images
+  this.x = 0;
+  this.y = 0;
     this.sprite = 'images/enemy-bug.png';
 };
 
@@ -113,6 +108,10 @@ render() {
 
   //New hero object
   const player = new Hero();
+  const bug1 = new Enemy ();
+  const allEnemies = [];
+  allEnemies.push(bug1);
+
 
   //Init allEnemies array
   // For each enemy create and push new Enemy object into abive array
