@@ -72,7 +72,9 @@ render() {
               }
               break;
          case 'up':
-              this.y -= this.jump;
+              if (this.y > 0) {
+                this.y -= this.jump;
+              }
               break;
          case 'right':
               if (this.x < this.step *4) {
@@ -80,7 +82,9 @@ render() {
               }
               break;
          case 'down':
-              this.y += this.jump;
+              if (this.y < this.jump *4){
+                this.y += this.jump;
+              }
               break;
        }
 
