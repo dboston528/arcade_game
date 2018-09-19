@@ -4,7 +4,8 @@
 var Enemy = function() {
   this.x = 0;
   this.y = 0;
-    this.sprite = 'images/enemy-bug.png';
+  this.sprite = 'images/enemy-bug.png';
+  this.step  = 101;
 };
 
 // Update the enemy's position, required method for game
