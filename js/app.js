@@ -16,9 +16,13 @@ Enemy.prototype.update = function(dt) {
     // all computers.
 
     //If enemy is not passed boundary
+    if(this.x < this.step * 4){
       // Move forward
       // Increment x by speed * dt
+      this.x += 20 * dt;
+    }
     //else
+
       // Reset pos to start
 
 };
