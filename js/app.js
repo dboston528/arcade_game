@@ -4,7 +4,7 @@
 var Enemy = function(x,y, speed) {
   this.x = x;
   this.y = y + 55;
-  this.speed = speed:
+  this.speed = speed;
   this.sprite = 'images/enemy-bug.png';
   this.step  = 101;
   this.boundary = this.step * 5;
@@ -22,7 +22,7 @@ Enemy.prototype.update = function(dt) {
     if(this.x < this.boundary){
       // Move forward
       // Increment x by speed * dt
-      this.x += 200 * dt;
+      this.x += this.speed * dt;
     }
     else {
       this.x = this.resetPos;
@@ -118,12 +118,12 @@ render() {
 
   //New hero object
   const player = new Hero();
-  const bug1 = new Enemy (-101, 0);
-  const bug2 = new Enemy (-101, 83);
-  const bug3 = new Enemy ((-101*2.5),83);
+  const bug1 = new Enemy (-101, 0, 200);
+  const bug2 = new Enemy (-101, 83, 300);
+  const bug3 = new Enemy ((-101 * 2.5), 83, 300);
   const allEnemies = [];
   allEnemies.push(bug1,bug2,bug3);
-  console.log(allEnemies);
+  // console.log(allEnemies);
 
 
   //Init allEnemies array
