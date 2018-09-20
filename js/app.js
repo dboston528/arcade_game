@@ -22,7 +22,9 @@ Enemy.prototype.update = function(dt) {
       // Increment x by speed * dt
       this.x += 200 * dt;
     }
-    //else
+    else {
+      this.x = 0;
+    }
 
       // Reset pos to start
 
