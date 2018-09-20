@@ -6,6 +6,7 @@ var Enemy = function() {
   this.y = 0;
   this.sprite = 'images/enemy-bug.png';
   this.step  = 101;
+  this.boundary = this.step * 5;
 };
 
 // Update the enemy's position, required method for game
@@ -16,7 +17,7 @@ Enemy.prototype.update = function(dt) {
     // all computers.
 
     //If enemy is not passed boundary
-    if(this.x < this.step * 5){
+    if(this.x < this.boundary){
       // Move forward
       // Increment x by speed * dt
       this.x += 200 * dt;
