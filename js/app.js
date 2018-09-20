@@ -118,8 +118,11 @@ render() {
   //New hero object
   const player = new Hero();
   const bug1 = new Enemy ();
+  const bug2 = new Enemy ();
+  const bug3 = new Enemy ();
   const allEnemies = [];
-  allEnemies.push(bug1);
+  allEnemies.push(bug1,bug2,bug3);
+  console.log(allEnemies);
 
 
   //Init allEnemies array
