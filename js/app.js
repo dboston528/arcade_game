@@ -57,6 +57,8 @@ class Hero  {
     this.sprite = 'images/char-boy.png';
   }
 
+
+
 //
 
 //Draw player sprite on current x and y position
@@ -94,6 +96,12 @@ render() {
        }
 
      }
+     update() {
+       for(let enemy of allEnemies) {
+         console.log(enemy);
+       }
+     }
+
 }
 
 
