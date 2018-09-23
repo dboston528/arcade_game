@@ -51,7 +51,7 @@ class Hero  {
     this.step = 101;
     this.jump = 83;
     this.startX = this.step * 2;
-    this.startY = (this.jump * 5) -20;
+    this.startY = (this.jump * 4) + 55;
     this.x = this.startX;
     this.y = this.startY;
     this.sprite = 'images/char-boy.png';
@@ -96,9 +96,15 @@ render() {
        }
 
      }
+
      update() {
+       //check collision here
        for(let enemy of allEnemies) {
-         console.log(enemy);
+
+         //Did player x and y collide with enemy?
+         if (this.y === enemy.y && (enemy.x + enemy.step/2 > this.x && enemy.x < this.x + this.step/2) ){
+           alert('collide');
+         }
        }
      }
 
@@ -113,7 +119,7 @@ render() {
     //methods
       // Update position
         // Check collision here
-          //Did player x and y collide with enemy?
+
         // Check win here?
           // Did player x and y reach final tile?
       //rendor
