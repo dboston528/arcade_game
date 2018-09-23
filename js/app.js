@@ -180,3 +180,5 @@ document.addEventListener('keyup', function(e) {
 
     player.handleInput(allowedKeys[e.keyCode]);
 });
+
+//I could not have done this project without the help matthew cranford. Go check him out at matthewcranford.com
