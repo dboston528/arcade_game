@@ -25,6 +25,15 @@ var Engine = (function(global) {
         lastTime;
         id = win.requestAnimationFrame(main);
 
+    const modal = document.querySelector('.modal_background');
+    const replay  = document.querySelector('.modal_button');
+
+    replay.addEventListener('click', function() {
+      modal.classList.toggle('hide');
+      player.reset();
+      player.victory = false;
+      win.requestAnimationFrame(main);
+    });
 
     canvas.width = 505;
     canvas.height = 606;
@@ -59,6 +68,7 @@ var Engine = (function(global) {
          */
          if (player.victory === true){
            win.cancelAnimationFrame(id);
+           modal.classList.toggle('hide');
          }
          else {
            id = win.requestAnimationFrame(main);
