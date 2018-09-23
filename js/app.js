@@ -106,6 +106,10 @@ render() {
            this.reset();
          }
        }
+       //Check for win
+       if (this.y === 55) {
+         console.log('You made it to da river!')
+       }
      }
 
      reset()  {
