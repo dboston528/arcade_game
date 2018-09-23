@@ -55,6 +55,7 @@ class Hero  {
     this.x = this.startX;
     this.y = this.startY;
     this.sprite = 'images/char-boy.png';
+    this.victory = false;
   }
 
 
@@ -108,7 +109,7 @@ render() {
        }
        //Check for win
        if (this.y === 55) {
-         console.log('You made it to da river!')
+         this.victory = true;
        }
      }
 
