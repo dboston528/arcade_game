@@ -103,9 +103,15 @@ render() {
 
          //Did player x and y collide with enemy?
          if (this.y === enemy.y && (enemy.x + enemy.step/2 > this.x && enemy.x < this.x + this.step/2) ){
-           alert('collide');
+           this.reset();
          }
        }
+     }
+
+     reset()  {
+       //set x and y to starting x and y
+       this.y = this.startY;
+       this.x = this.startX;
      }
 
 }
@@ -127,7 +133,8 @@ render() {
 
 
     //reset Hero
-      //set x and y to starting x and y
+
+
 
 
   //New hero object
