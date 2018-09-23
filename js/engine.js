@@ -23,6 +23,7 @@ var Engine = (function(global) {
         canvas = doc.createElement('canvas'),
         ctx = canvas.getContext('2d'),
         lastTime;
+        id = win.requestAnimationFrame(main);
 
 
     canvas.width = 505;
@@ -57,9 +58,12 @@ var Engine = (function(global) {
          * function again as soon as the browser is able to draw another frame.
          */
          if (player.victory === true){
-           console.log('Game Over');
+           win.cancelAnimationFrame(id);
          }
-         win.requestAnimationFrame(main);
+         else {
+           id = win.requestAnimationFrame(main);
+         }
+
     }
 
     /* This function does some initial setup that should only occur once,
