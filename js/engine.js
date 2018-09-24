@@ -23,7 +23,7 @@ var Engine = (function(global) {
         canvas = doc.createElement('canvas'),
         ctx = canvas.getContext('2d'),
         lastTime;
-        id = win.requestAnimationFrame(main);
+        // id = win.requestAnimationFrame(main);
 
     const modal = document.querySelector('.modal_background');
     const replay  = document.querySelector('.modal_button');
