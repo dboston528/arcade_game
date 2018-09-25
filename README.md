@@ -8,7 +8,7 @@ Clone the the project or download it directly to your computer
 
 After getting the file, open the index.html file in your web browser and you're all set!
 
-To clone to terminal copy and paste the code below in your terminal:
+To clone copy and paste the code below in your terminal:
 
 `git clone https://github.com/dboston528/arcade_game.git`
 
