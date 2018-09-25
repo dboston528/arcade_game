@@ -1,8 +1,8 @@
-#Classic Arcade Game
+# Classic Arcade Game
 
-I created this game through Udacity's FrontEnd Web Developer Nanodegree program. The focus in this project was object oriented JavaScript. 
+I created this game through Udacity's FrontEnd Web Developer Nanodegree program. The focus in this project was object oriented JavaScript.
 
-#How to Load the Game
+# How to Load the Game
 
 Clone the the project or download it directly
 
@@ -10,7 +10,7 @@ To clone to terminal copy and paste the code below in your terminal:
 
 `git clone https://github.com/dboston528/arcade_game.git`
 
-#How to Play
+# How to Play
 
 Use keyboard arrrow keys to navigate the game board.
 
